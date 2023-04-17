@@ -1,6 +1,8 @@
 import Image from "next/image";
 import styles from "./styles.module.scss";
 import { MdSecurity } from "react-icons/md";
+"use client"
+
 import { BsSuitHeart } from "react-icons/bs";
 import { RiAccountPinCircleLine, RiArrowDropDownFill } from "react-icons/ri";
 import Link from "next/link";
