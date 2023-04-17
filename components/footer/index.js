@@ -6,7 +6,7 @@ import Payment from "./Payment"
 import Socials from "./Socials"
 import styles from "./styles.module.scss"
 
-const Footer = () => {
+const Footer = ({ country }) => {
   return (
     <div className={styles.footer}>
       <div className={styles.footer_container}>
@@ -14,7 +14,7 @@ const Footer = () => {
         <Socials />
         <NewsLetter />
         <Payment />
-        <Copyright />
+        <Copyright country={country} />
       </div>
     </div>
   )

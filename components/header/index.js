@@ -5,11 +5,11 @@ import Main from "./Main";
 import Top from "./Top";
 import styles from "./styles.module.scss";
 
-const Header = () => {
+const Header = ({ country }) => {
   return (
     <div className={styles.header}>
       <Ad />
-      <Top />
+      <Top country={country} />
       <Main />
     </div>
   );

@@ -4,7 +4,7 @@ import Link from "next/link";
 import styles from "./styles.module.scss";
 import { IoLocationSharp } from "react-icons/io5"
 
-export default function Copyright() {
+export default function Copyright({ country }) {
   return (
     <div className={styles.footer_copyright}>
       <section>
@@ -22,7 +22,7 @@ export default function Copyright() {
           <li>
             <a href="#">
                 <IoLocationSharp /> 
-                <span>India</span>
+                <span>{country.name}</span>
             </a>
           </li>
         </ul>

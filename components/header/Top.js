@@ -9,7 +9,7 @@ import Link from "next/link";
 import { useState } from "react";
 import UserMenu from "./UserMenu";
 
-const Top = () => {
+const Top = ({ country }) => {
   const [loggedIn, setLoggedIn] = useState(true);
   const [visible, setVisible] = useState(false);
 
@@ -20,8 +20,8 @@ const Top = () => {
 
         <ul className={styles.top_list}>
           <li className={styles.li}>
-            <Image src="/images/country-logo.jpeg" alt="logo" width={20} height={20} />
-            <span>Morocco / usd</span>
+            <Image src={country.flag} alt="country" width={20} height={20} />
+            <span>{country.name}</span>
           </li>
           <li className={styles.li}>
             <MdSecurity />
