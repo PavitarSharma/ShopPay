@@ -1,1 +1,29 @@
-$red-color: red
+$shadow-1: rgba(99, 99, 99, .2) 0px 2px 8px 0px;
+$blue-color: #2f82ff;
+$grey-color: #f8f8f8;
+
+.btn_primary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background-color: $blue-color;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+    font-weight: 60;
+    border-radius: 2px;
+}
+
+.btn_outlined {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background-color: $grey-color;
+    color: $blue-color;
+    cursor: pointer;
+    width: 100%;
+    font-weight: 60;
+    border-radius: 2px;
+}
