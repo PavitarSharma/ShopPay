@@ -22,7 +22,7 @@ export default function Copyright({ country }) {
           <li>
             <a href="#">
                 <IoLocationSharp /> 
-                <span>{country.name}</span>
+                <span>{country ? country.name : "India"}</span>
             </a>
           </li>
         </ul>
